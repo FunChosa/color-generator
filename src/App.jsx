@@ -10,7 +10,7 @@ function App() {
     "(prefers-color-scheme: dark)"
   ).matches;
 
-  const [isDark, setIsDark] = useLocalStorage("isDark", preferredTheme); // запоминание темы в локальном хранилище
+  const [isDark, setIsDark] = useLocalStorage("isDark", preferredTheme);
 
   return (
     <div data-theme={isDark ? "dark" : "light"} className="App">
